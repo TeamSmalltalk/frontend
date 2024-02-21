@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="Chat"
+            type="com.example.chating.ChatUserData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            style="@style/ProfileStyle"
+            android:id="@+id/chat_profile"
+            android:background="@drawable/aa_profile_frame"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="3"/>
+        <!---54dp-->
+
+        <TextView
+            style="@style/ChatStyle"
+            android:background="@drawable/chatbubble"
+            android:id="@+id/chat_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:maxWidth="200dp"
+            android:text="정준c2x" />
+
+
+    </LinearLayout>
+</layout>

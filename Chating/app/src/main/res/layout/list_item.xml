@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="list"
+            type="com.example.chating.ListData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/list_card">
+
+        <!-- 번호 및 방 제목-->
+        <LinearLayout
+            style="@style/listTitle"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/listText"
+                android:id="@+id/listNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="1." />
+
+            <TextView
+                style="@style/listTitle"
+                android:id="@+id/listTitle"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:text="방의 제목을 입력하시오 "/>
+
+        </LinearLayout>
+
+        <!-- 인원 수 -->
+        <TextView
+            style="@style/listText"
+            android:id="@+id/listCapacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="n/10 ">
+
+        </TextView>
+
+    </LinearLayout>
+</layout>
